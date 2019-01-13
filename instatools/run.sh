@@ -17,9 +17,10 @@ echo "1) Auto Mention"
 echo "2) Auto Like Timeline"
 echo "3) Delete All Media"
 echo "4) Follow Target"
-echo "5) Find Firts Posting"
-echo "6) Unfollow Who Not Followback"
-echo "7) Unfollow All"
+echo "5) Follow Target V2 (Recommend)"
+echo "6) Find Firts Posting"
+echo "7) Unfollow Who Not Followback"
+echo "8) Unfollow All"
 echo -e "0) keluar\e[0m"
 echo -e "\e[1;32m"
 read -p "root@CLI-tools : " bro
@@ -58,17 +59,24 @@ if [ $bro = 5 ] || [ $bro = 5 ]
 then
 clear
 cd tools
-php firtsmedia.php
+php fftv2.php
 fi
 
 if [ $bro = 6 ] || [ $bro = 6 ]
 then
 clear
 cd tools
-php unfollownotfollback.php
+php firtsmedia.php
 fi
 
 if [ $bro = 7 ] || [ $bro = 7 ]
+then
+clear
+cd tools
+php unfollownotfollback.php
+fi
+
+if [ $bro = 8 ] || [ $bro = 8 ]
 then
 clear
 cd tools
